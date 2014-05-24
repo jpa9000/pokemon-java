@@ -1,4 +1,4 @@
 pokemon-java
 ============
 
-Pokemon built on Java
+A Pokemon Simulaton coded using Java Eclipse, created and copyright by JPA 2013
