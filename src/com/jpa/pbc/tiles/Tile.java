@@ -1,0 +1,298 @@
+package com.jpa.pbc.tiles;
+
+import com.jpa.pbc.graphic.Sprite;
+import com.jpa.pbc.system.Screen;
+
+public class Tile {
+
+	public int x, y;
+	public Sprite sprite;
+	
+	public static Tile grass = new GrassTile(Sprite.grass);
+	public static Tile floor = new GrassTile(Sprite.floor);
+	public static Tile chair = new TreeTile(Sprite.chair);
+	public static Tile rug = new GrassTile(Sprite.rug);
+	public static Tile rug2 = new GrassTile(Sprite.rug2);
+	public static Tile rug3 = new GrassTile(Sprite.rug3);
+	public static Tile rug4 = new GrassTile(Sprite.rug4);
+	public static Tile rug5 = new GrassTile(Sprite.rug5);
+	public static Tile rug6 = new GrassTile(Sprite.rug6);
+	public static Tile voidTile = new VoidTile(Sprite.VoidSprite);
+	public static Tile flower = new FlowerTile(Sprite.flower);
+	public static Tile flower2 = new FlowerTile(Sprite.flower2);
+	public static Tile tree = new TreeTile(Sprite.tree);
+	public static Tile tree2 = new TreeTile(Sprite.tree2);
+	public static Tile tree3 = new TreeTile(Sprite.tree3);
+	public static Tile tree4 = new TreeTile(Sprite.tree4);
+	public static Tile bigAtree = new TreeTile(Sprite.bigAtree);
+	public static Tile bigAtree2 = new TreeTile(Sprite.bigAtree2);
+	public static Tile bigAtree3 = new TreeTile(Sprite.bigAtree3);
+	public static Tile bigAtree4 = new TreeTile(Sprite.bigAtree4);
+	public static Tile bigAtree5 = new TreeTile(Sprite.bigAtree5);
+	public static Tile bigAtree6 = new TreeTile(Sprite.bigAtree6);
+	public static Tile ahouse = new HouseTile(Sprite.ahouse);
+	public static Tile ahouse1 = new HouseTile(Sprite.ahouse1);
+	public static Tile ahouse2 = new HouseTile(Sprite.ahouse2);
+	public static Tile ahouse3 = new HouseTile(Sprite.ahouse3);
+	public static Tile ahouse4 = new HouseTile(Sprite.ahouse4);
+	public static Tile ahouse5 = new HouseTile(Sprite.ahouse5);
+	public static Tile ahouse6 = new HouseTile(Sprite.ahouse6);
+	public static Tile ahouse7 = new HouseTile(Sprite.ahouse7);
+	public static Tile ahouse8 = new HouseTile(Sprite.ahouse8);
+	public static Tile ahouse9 = new HouseTile(Sprite.ahouse9);
+	public static Tile ahouse10 = new HouseTile(Sprite.ahouse10);
+	public static Tile ahouse11 = new HouseTile(Sprite.ahouse11);
+	public static Tile ahouse12 = new HouseTile(Sprite.ahouse12);
+	public static Tile ahouse13 = new HouseTile(Sprite.ahouse13);
+	public static Tile ahouse14 = new HouseTile(Sprite.ahouse14);
+	public static Tile ahouse15 = new HouseTile(Sprite.ahouse15);
+	public static Tile ahouse16 = new HouseTile(Sprite.ahouse16);
+	public static Tile ahouse17 = new HouseTile(Sprite.ahouse17);
+	public static Tile ahouse18 = new HouseTile(Sprite.ahouse18);
+	public static Tile ahouse19 = new HouseTile(Sprite.ahouse19);
+	public static Tile ahouse20 = new HouseTile(Sprite.ahouse20);
+	public static Tile ahouse21 = new HouseTile(Sprite.ahouse21);
+	public static Tile ahouse22 = new HouseTile(Sprite.ahouse22);
+	public static Tile ahouse23 = new HouseTile(Sprite.ahouse23);
+	public static Tile ahouse24 = new HouseTile(Sprite.ahouse24);
+	public static Tile ahouse25 = new HouseTile(Sprite.ahouse25);
+	public static Tile ahouse26 = new HouseTile(Sprite.ahouse26);
+	public static Tile ahouse27 = new HouseTile(Sprite.ahouse27);
+	public static Tile ahouse28 = new HouseTile(Sprite.ahouse28);
+	public static Tile ahouse29 = new HouseTile(Sprite.ahouse29);
+	
+	public static Tile bhouse = new HouseTile(Sprite.bhouse);
+	public static Tile bhouse1 = new HouseTile(Sprite.bhouse1);
+	public static Tile bhouse2 = new HouseTile(Sprite.bhouse2);
+	public static Tile bhouse3 = new HouseTile(Sprite.bhouse3);
+	public static Tile bhouse4 = new HouseTile(Sprite.bhouse4);
+	public static Tile bhouse5 = new HouseTile(Sprite.bhouse5);
+	public static Tile bhouse6 = new HouseTile(Sprite.bhouse6);
+	public static Tile bhouse7 = new HouseTile(Sprite.bhouse7);
+	public static Tile bhouse8 = new HouseTile(Sprite.bhouse8);
+	public static Tile bhouse9 = new HouseTile(Sprite.bhouse9);
+	public static Tile bhouse10 = new HouseTile(Sprite.bhouse10);
+	public static Tile bhouse11 = new HouseTile(Sprite.bhouse11);
+	public static Tile bhouse12 = new HouseTile(Sprite.bhouse12);
+	public static Tile bhouse13 = new HouseTile(Sprite.bhouse13);
+	public static Tile bhouse14 = new HouseTile(Sprite.bhouse14);
+	public static Tile bhouse15 = new HouseTile(Sprite.bhouse15);
+	public static Tile bhouse16 = new HouseTile(Sprite.bhouse16);
+	public static Tile bhouse17 = new HouseTile(Sprite.bhouse17);
+	public static Tile bhouse18 = new HouseTile(Sprite.bhouse18);
+	public static Tile bhouse19 = new HouseTile(Sprite.bhouse19);
+	public static Tile bhouse20 = new HouseTile(Sprite.bhouse20);
+	public static Tile bhouse21 = new HouseTile(Sprite.bhouse21);
+	public static Tile bhouse22 = new HouseTile(Sprite.bhouse22);
+	public static Tile bhouse23 = new HouseTile(Sprite.bhouse23);
+	public static Tile bhouse24 = new HouseTile(Sprite.bhouse24);
+	public static Tile bhouse25 = new HouseTile(Sprite.bhouse25);
+	public static Tile bhouse26 = new HouseTile(Sprite.bhouse26);
+	public static Tile bhouse27 = new HouseTile(Sprite.bhouse27);
+	public static Tile bhouse28 = new HouseTile(Sprite.bhouse28);
+	public static Tile bhouse29 = new HouseTile(Sprite.bhouse29);
+	public static Tile bhouse30 = new HouseTile(Sprite.bhouse30);
+	public static Tile bhouse31 = new HouseTile(Sprite.bhouse31);
+	public static Tile bhouse32 = new HouseTile(Sprite.bhouse32);
+	public static Tile bhouse33 = new HouseTile(Sprite.bhouse33);
+	public static Tile bhouse34 = new HouseTile(Sprite.bhouse34);
+	public static Tile bhouse35 = new HouseTile(Sprite.bhouse35);
+	public static Tile bhouse36 = new HouseTile(Sprite.bhouse36);
+	public static Tile bhouse37 = new HouseTile(Sprite.bhouse37);
+	public static Tile bhouse38 = new HouseTile(Sprite.bhouse38);
+	public static Tile bhouse39 = new HouseTile(Sprite.bhouse39);
+	public static Tile bhouse40 = new HouseTile(Sprite.bhouse40);
+	public static Tile bhouse41 = new HouseTile(Sprite.bhouse41);
+	public static Tile bhouse42 = new HouseTile(Sprite.bhouse42);
+	public static Tile bhouse43 = new HouseTile(Sprite.bhouse43);
+	public static Tile bhouse44 = new HouseTile(Sprite.bhouse44);
+	public static Tile bhouse45 = new HouseTile(Sprite.bhouse45);
+	public static Tile bhouse46 = new HouseTile(Sprite.bhouse46);
+	public static Tile bhouse47 = new HouseTile(Sprite.bhouse47);
+	public static Tile bhouse48 = new HouseTile(Sprite.bhouse48);
+	public static Tile bhouse49 = new HouseTile(Sprite.bhouse49);
+	public static Tile bhouse50 = new HouseTile(Sprite.bhouse50);
+	public static Tile bhouse51 = new HouseTile(Sprite.bhouse51);
+	public static Tile bhouse52 = new HouseTile(Sprite.bhouse52);
+	public static Tile bhouse53 = new HouseTile(Sprite.bhouse53);
+	public static Tile bhouse54 = new HouseTile(Sprite.bhouse54);
+	public static Tile bhouse55 = new HouseTile(Sprite.bhouse55);
+	public static Tile bhouse56 = new HouseTile(Sprite.bhouse56);
+	public static Tile bhouse57 = new HouseTile(Sprite.bhouse57);
+	public static Tile bhouse58 = new HouseTile(Sprite.bhouse58);
+	public static Tile bhouse59 = new HouseTile(Sprite.bhouse59);
+	public static Tile bhouse60 = new HouseTile(Sprite.bhouse60);
+	public static Tile bhouse61 = new HouseTile(Sprite.bhouse61);
+	public static Tile bhouse62 = new HouseTile(Sprite.bhouse62);
+	public static Tile bhouse63 = new HouseTile(Sprite.bhouse63);
+	
+	public static Tile mhouse = new HouseTile(Sprite.mhouse);
+	public static Tile mhouse2 = new HouseTile(Sprite.mhouse2);
+	public static Tile mhouse3 = new HouseTile(Sprite.mhouse3);
+	public static Tile mhouse4 = new HouseTile(Sprite.mhouse4);
+	public static Tile mhouse5 = new HouseTile(Sprite.mhouse5);
+	public static Tile mhouse6 = new HouseTile(Sprite.mhouse6);
+	public static Tile mhouse7 = new HouseTile(Sprite.mhouse7);
+	public static Tile mhouse8 = new HouseTile(Sprite.mhouse8);
+	public static Tile mhouse9 = new HouseTile(Sprite.mhouse9);
+	public static Tile mhouse10 = new HouseTile(Sprite.mhouse10);
+	public static Tile mhouse11 = new HouseTile(Sprite.mhouse11);
+	public static Tile mhouse12 = new HouseTile(Sprite.mhouse12);
+	public static Tile mhouse13 = new HouseTile(Sprite.mhouse13);
+	public static Tile mhouse14 = new HouseTile(Sprite.mhouse14);
+	public static Tile mhouse15 = new HouseTile(Sprite.mhouse15);
+	public static Tile mhouse16 = new HouseTile(Sprite.mhouse16);
+	
+	public static final int Cchair = 0xff6ccb70;
+	public static final int Cgrass = 0xff00ff00;
+	public static final int Cfloor = 0xffc8c058;
+	public static final int Cflower = 0xffffff00;
+	public static final int Cvoidtile = 0xff1b87e0;
+	public static final int Ctree = 0xff007f0e;
+	public static final int Ctree2 = 0xff198b26;
+	public static final int Ctree3 = 0xff32983e;
+	public static final int Ctree4 = 0xff4ca556;
+	public static final int CbAtree = 0xffb0171f;
+	public static final int CbAtree2 = 0xffdc143c;
+	public static final int CbAtree3 = 0xffffb6c1;
+	public static final int CbAtree4 = 0xffffaeb9;
+	public static final int CbAtree5 = 0xffeea2ad;
+	public static final int CbAtree6 = 0xffcd8c95;
+	public static final int Cahouse  = 0xfffff6e5;
+	public static final int Cahouse1 = 0xffffedcc;
+	public static final int Cahouse2 = 0xffffe4b2;
+	public static final int Cahouse3 = 0xffffdb99;
+	public static final int Cahouse4 = 0xffffd27f;
+	public static final int Cahouse5 = 0xffffc966;
+	public static final int Cahouse6 = 0xffffc04c;
+	public static final int Cahouse7 = 0xffffb732;
+	public static final int Cahouse8 = 0xffffae19;
+	public static final int Cahouse9 = 0xffffa500;
+	public static final int Cahouse10 = 0xff482f00;
+	public static final int Cahouse11 = 0xffcc8400;
+	public static final int Cahouse12 = 0xffb27300;
+	public static final int Cahouse13 = 0xff996300;
+	public static final int Cahouse14 = 0xff7f5200;
+	public static final int Cahouse15 = 0xff664200;
+	public static final int Cahouse16 = 0xff4c3100;
+	public static final int Cahouse17 = 0xff332100;
+	public static final int Cahouse18 = 0xff191000;
+	public static final int Cahouse19 = 0xffd9ff00;
+	public static final int Cahouse20 = 0xffc3e500;
+	public static final int Cahouse21 = 0xffadcc00;
+	public static final int Cahouse22 = 0xff97b200;
+	public static final int Cahouse23 = 0xff829900;
+	public static final int Cahouse24 = 0xff6c7f00;
+	public static final int Cahouse25 = 0xff566600;
+	public static final int Cahouse26 = 0xff414c00;
+	public static final int Cahouse27 = 0xff2b3300;
+	public static final int Cahouse28 = 0xffE59400;
+	public static final int Cahouse29 = 0xffdcff19;
+	
+	public static final int Cbhouse  = 0xff8b5f65;
+	public static final int Cbhouse1 = 0xffffc0cb;
+	public static final int Cbhouse2 = 0xffffb5c5;
+	public static final int Cbhouse3 = 0xffeea9d8;
+	public static final int Cbhouse4 = 0xffcd919e;
+	public static final int Cbhouse5 = 0xff8b636c;
+	public static final int Cbhouse6 = 0xffdb7093;
+	public static final int Cbhouse7 = 0xffff82ab;
+	public static final int Cbhouse8 = 0xffee799f;
+	public static final int Cbhouse9 = 0xffcd6889;
+	public static final int Cbhouse10 = 0xff8b475d;
+	public static final int Cbhouse11 = 0xfffff0f5;
+	public static final int Cbhouse12 = 0xffeee0e5;
+	public static final int Cbhouse13 = 0xffcdc1c5;
+	public static final int Cbhouse14 = 0xff8b8386;
+	public static final int Cbhouse15 = 0xffff3e96;
+	public static final int Cbhouse16 = 0xffee3a8c;
+	public static final int Cbhouse17 = 0xffcd3278;
+	public static final int Cbhouse18 = 0xff8b2252;
+	public static final int Cbhouse19 = 0xffff69b4;
+	public static final int Cbhouse20 = 0xffee6aa7;
+	public static final int Cbhouse21 = 0xffcd6090;
+	public static final int Cbhouse22 = 0xffff6eb4;
+	public static final int Cbhouse23 = 0xff8b3a62;
+	public static final int Cbhouse24 = 0xff872657;
+	public static final int Cbhouse25 = 0xffff1493;
+	public static final int Cbhouse26 = 0xffee1289;
+	public static final int Cbhouse27 = 0xffcd1076;
+	public static final int Cbhouse28 = 0xff8b0a50;
+	public static final int Cbhouse29 = 0xffff34b3;
+	public static final int Cbhouse30 = 0xffee30a7;
+	public static final int Cbhouse31 = 0xffcd2990;
+	public static final int Cbhouse32 = 0xff8b1c62;
+	public static final int Cbhouse33 = 0xffc71585;
+	public static final int Cbhouse34 = 0xffd02090;
+	public static final int Cbhouse35 = 0xffda70d6;
+	public static final int Cbhouse36 = 0xffff83fa;
+	public static final int Cbhouse37 = 0xffee7ae9;
+	public static final int Cbhouse38 = 0xffcd69c9;
+	public static final int Cbhouse39 = 0xff8b4789;
+	public static final int Cbhouse40 = 0xffd8bfd8;
+	public static final int Cbhouse41 = 0xffffe1ff;
+	public static final int Cbhouse42 = 0xffeed2ee;
+	public static final int Cbhouse43 = 0xffcdb5cd;
+	public static final int Cbhouse44 = 0xff8b7b8b;
+	public static final int Cbhouse45 = 0xffffbbff;
+	public static final int Cbhouse46 = 0xffeeaeee;
+	public static final int Cbhouse47 = 0xffcd96cd;
+	public static final int Cbhouse48 = 0xffb23aee;
+	public static final int Cbhouse49 = 0xff8b668b;
+	public static final int Cbhouse50 = 0xffdda0dd;
+	public static final int Cbhouse51 = 0xffee82ee;
+	public static final int Cbhouse52 = 0xffee00ee;
+	public static final int Cbhouse53 = 0xffcd00cd;
+	public static final int Cbhouse54 = 0xff8b008b;
+	public static final int Cbhouse55 = 0xff800080;
+	public static final int Cbhouse56 = 0xffba55d3;
+	public static final int Cbhouse57 = 0xffe066ff;
+	public static final int Cbhouse58 = 0xffd15fee;
+	public static final int Cbhouse59 = 0xffb452cd;
+	public static final int Cbhouse60 = 0xff7a378b;
+	public static final int Cbhouse61 = 0xff9400d3;
+	public static final int Cbhouse62 = 0xff9932cc;
+	public static final int Cbhouse63 = 0xffbf3eff;
+	
+	public static final int Cbmhouse = 0xff912cee;
+	public static final int Cbmhouse2 = 0xff9a32cd;
+	public static final int Cbmhouse3 = 0xff68228b;
+	public static final int Cbmhouse4 = 0xff4b0082;
+	public static final int Cbmhouse5 = 0xff8a2be2;
+	public static final int Cbmhouse6 = 0xff9b30ff;
+	public static final int Cbmhouse7 = 0xff483d8b;
+	public static final int Cbmhouse8 = 0xff7d26cd;
+	public static final int Cbmhouse9 = 0xff551a8b;
+	public static final int Cbmhouse10 = 0xff9370db;
+	public static final int Cbmhouse11 = 0xffab82ff;
+	public static final int Cbmhouse12 = 0xff9f79ee;
+	public static final int Cbmhouse13 = 0xff8968cd;
+	public static final int Cbmhouse14 = 0xff5d478b;
+	public static final int Cbmhouse15 = 0xff8470ff;
+	public static final int Cbmhouse16 = 0xff7b68ee;
+	
+	public static final int Cbrug = 0xff6890c0;
+	public static final int Cbrug2 = 0xffb8d8f8;
+	public static final int Cbrug3 = 0xff88b8f0;
+	public static final int Cbrug4 = 0xff436eee;
+	public static final int Cbrug5 = 0xff3a5fcd;
+	public static final int Cbrug6 = 0xff27408b;
+	
+	public Tile(Sprite sprite)
+	{
+		this.sprite = sprite;
+				
+	}
+	
+
+	
+	public void render(int x, int y, Screen screen)
+	{
+		
+	}
+	
+	public boolean solid()
+	{
+		return false;
+	}
+}
